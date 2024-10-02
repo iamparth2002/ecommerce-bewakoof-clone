@@ -18,7 +18,7 @@ const data = {
   ],
   heroBanner: {
     image:
-      'https://images.bewakoof.com/uploads/grid/app/new-year-desktop-inside-banner-common-1610111930.jpg',
+      'https://bewakoof-tawny.vercel.app/img/Nov-COTM-SnazzyGreen-Bewakoof-HeroBanner-Launch-men--1--1635685347.webp',
     text: 'Summer Sale: Up to 50% Off',
   },
   trendingProducts: [
@@ -278,9 +278,9 @@ const SectionHeading = ({ children }) => (
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-[#475E66]/10">
       {/* Top Banner */}
-      <div className="bg-yellow-400 text-center py-2 px-4 text-sm font-medium">
+      <div className="bg-[#475E66] text-white text-center py-2 px-4 text-sm font-medium">
         {data.topBanner}
       </div>
 
@@ -290,7 +290,8 @@ export default function Component() {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <span className="font-bold text-xl">Elemental</span>
+                <img src='/Logo.png' alt="Logo" className="h-auto w-20 rounded-xl" />
+                {/* <span className="font-bold text-xl">Elemental</span> */}
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                 {data.categories.map((category, index) => (
@@ -338,7 +339,7 @@ export default function Component() {
           <img
             src={data.heroBanner.image}
             alt="Promotional Banner"
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-full max-h-[400px] rounded-lg shadow-md object-cover object-top"
           />
           {/* <div className="absolute inset-0 flex items-center justify-center">
             <h2 className="text-4xl font-bold text-white shadow-text">{data.heroBanner.text}</h2>
@@ -476,7 +477,7 @@ export default function Component() {
         </div>
       </div>
       {/* Footer */}
-      <footer className="bg-gray-900 text-white">
+      <footer className="bg-[#475E66] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Customer Service */}
@@ -514,7 +515,7 @@ export default function Component() {
               <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
               <p className="mb-4">Subscribe to receive updates, access to exclusive deals, and more.</p>
               <div className="flex">
-                <Input type="email" placeholder="Enter your email" className="rounded-r-none" />
+                <Input type="email" placeholder="Enter your email" className="rounded-r-none bg-white text-black" />
                 <Button className="rounded-l-none">Subscribe</Button>
               </div>
             </div>
