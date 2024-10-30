@@ -333,19 +333,29 @@ export default function Component() {
         </div>
       </nav>
 
-      {/* Hero Section with Promotional Banners */}
+   
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
         <div className="relative">
           <img
-            src={data.heroBanner.image}
+            src={"/banner2.png"}
             alt="Promotional Banner"
-            className="w-full max-h-[400px] rounded-lg shadow-md object-cover object-top"
+            className="w-full max-h-[600px] rounded-lg shadow-md object-cover object-top"
           />
           {/* <div className="absolute inset-0 flex items-center justify-center">
             <h2 className="text-4xl font-bold text-white shadow-text">{data.heroBanner.text}</h2>
           </div> */}
         </div>
       </div>
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <div className="relative">
+          <img
+            src={data.heroBanner.image}
+            alt="Promotional Banner"
+            className="w-full max-h-[400px] rounded-lg shadow-md object-cover object-top"
+          />
+          
+        </div>
+      </div> */}
 
       {/* Featured Categories */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
